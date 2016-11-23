@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1479909851 source:d:\titip putri\fungsi rekursif\restaturant tubes\child.cpp
+
+1479913797 d:\titip putri\fungsi rekursif\restaturant tubes\child.h
+	<iostream>
+
+1446667744 source:d:\titip putri\fungsi rekursif\restaturant tubes\main.cpp
+	<iostream>
+
+1479910700 source:d:\titip putri\fungsi rekursif\restaturant tubes\parent.cpp
+	"parent.h"
+
+1479910246 d:\titip putri\fungsi rekursif\restaturant tubes\parent.h
+	<iostream>
+	"child.h"
+
