@@ -13,6 +13,9 @@ address_p alokasi(infotype_p x) {
     child(P) = NULL;
     return P;
 }
+void dealokasi(address_p &P){
+    delete P;
+}
 
 void insertFirst(List_p &L, address_p P) {
     if(first(L) == NULL) {
@@ -41,43 +44,79 @@ void insertAfter(List_p &L, address_p P, address_p prec)
 }
 
 void insertLast(List_p &L, address_p P) {
-    if(first(L) == NULL) {
+    if(last(L) == NULL) {
         last(L) = P;
-        first(L) = P;
+        //first(L) = P;
     } else {
-        prev(P) = first(L);
-        next(first(L)) = P;
-        first(L) = P;
+        prev(P) = last(L);
+        next(last(L)) = P;
+        last(L) = P;
     }
 }
 
 
-void insertAfter(address_p &Prec, address_p P) {
-    prev(next(Prec)) = P;
-    next(P) = next(Prec);
-    prev(P) = Prec;
-    next(Prec) = P;
-}
+//void insertAfter(address_p &Prec, address_p P) {
+//    prev(next(Prec)) = P;
+//    next(P) = next(Prec);
+//    prev(P) = Prec;
+//    next(Prec) = P;
+//}
 
 void printInfo(List_p L) {
     address_p P = first(L);
     while(P !=NULL) {
-        cout<<info(P)<<", parent : ";
-        if(child(P)!=NULL)
-            cout<<info(child(P))<<endl;
-        else
-            cout<<"NULL"<<endl;
-        P = next(P);
+        cout<<info(P).id<<endl;
+        cout<<info(P).nama<<endl;
+//        cout<<info(P).alamat<<endl;
+//        cout<<info(P).nope<<endl;
+//        cout<<info(P).tglberdiri<<endl;
+//        cout<<info(P).kategoriR<<endl;
+//        cout<<info(P)<<", parent : ";
+//        if(child(P)!=NULL)
+//            cout<<info(child(P))<<endl;
+//        else
+//            cout<<"NULL"<<endl;
+       P = next(P);
     }
 }
 
-address_p findElm(List_p L, infotype_p x) {
-    address_p P = first(L);
-    while(P != NULL) {
-        if(info(P)==x) {
-            return P;
+void deleteFirst(List_p &L, address_p &P){
+    if (first(L) != NULL){
+        P = first(L);
+        if (next(P) = NULL){
+            first(L) = NULL;
         }
-        P = next(P);
+        else if(next(P) != NULL){
+            first(L) = next(P);
+            prev(next(P)) = NULL;
+            next(P) = NULL;
+            //dealokasi(P);
+        }
     }
-    return NULL;
 }
+void deleteLast(List_p &L, address_p &P){
+    if(next(first(L)) == NULL)
+    {
+        deleteFirst(L,P);
+    }
+    else
+    {
+        address_p temp = first(L);
+        while(next(next(temp)) != NULL)
+        {
+            temp = next(temp);
+        }
+        P = next(temp);
+        next(temp) = NULL;
+    }
+}
+//address_p findElm(List_p L, infotype_p x) {
+//    address_p P = first(L);
+//    while(P != NULL) {
+//        if(info(P) == x) {
+//            return P;
+//        }
+//        P = next(P);
+//    }
+//    return NULL;
+//}

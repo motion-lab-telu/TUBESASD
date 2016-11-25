@@ -14,3 +14,21 @@
 	<iostream>
 	"child.h"
 
+1479918177 source:d:\sekolah\telkom\asd\tubes\tubesasd\child.cpp
+	"child.h"
+
+1479918177 d:\sekolah\telkom\asd\tubes\tubesasd\child.h
+	<iostream>
+
+1480061509 source:d:\sekolah\telkom\asd\tubes\tubesasd\main.cpp
+	<iostream>
+	"parent.h"
+	"child.h"
+
+1480061517 source:d:\sekolah\telkom\asd\tubes\tubesasd\parent.cpp
+	"parent.h"
+
+1479973084 d:\sekolah\telkom\asd\tubes\tubesasd\parent.h
+	<iostream>
+	"child.h"
+

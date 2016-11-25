@@ -2,6 +2,7 @@
 #define PARENT_H_INCLUDED
 #include <iostream>
 #include "child.h"
+
 using namespace std;
 
 #define next(P) P->next
@@ -19,7 +20,7 @@ struct restaurant{
     string tglberdiri;
     string kategoriR; //
 };
-typedef int infotype_p;
+typedef restaurant infotype_p;
 typedef struct elmlist_p *address_p;
 
 struct elmlist_p {
