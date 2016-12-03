@@ -283,7 +283,7 @@ void sortingchild(List_c &L){
 void jumlahmenu(List_c L)
 {
     /**
-    * NIM: 1301154552
+    * NIM: 1301154566
     * IS : List L mungkin kosong
     * FS : elemen yang ditunjuk P menjadi elemen pertama pada List L
     */
@@ -345,7 +345,7 @@ void MaxHarga(List_c L){
 }
 void MinHarga(List_c L){
     /**
-    * NIM: 1301154552
+    * NIM: 1301154566
     * IS : List L mungkin kosong
     * FS : elemen yang ditunjuk P menjadi elemen pertama pada List L
     */
