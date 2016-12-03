@@ -14,21 +14,103 @@
 	<iostream>
 	"child.h"
 
-1479918177 source:d:\sekolah\telkom\asd\tubes\tubesasd\child.cpp
+1480397704 source:d:\sekolah\telkom\asd\tubes\tubesasd\child.cpp
+	<iostream>
+	<string>
 	"child.h"
 
-1479918177 d:\sekolah\telkom\asd\tubes\tubesasd\child.h
+1480396152 d:\sekolah\telkom\asd\tubes\tubesasd\child.h
 	<iostream>
 
-1480061509 source:d:\sekolah\telkom\asd\tubes\tubesasd\main.cpp
+1480398253 source:d:\sekolah\telkom\asd\tubes\tubesasd\main.cpp
 	<iostream>
 	"parent.h"
 	"child.h"
 
-1480061517 source:d:\sekolah\telkom\asd\tubes\tubesasd\parent.cpp
+1480397533 source:d:\sekolah\telkom\asd\tubes\tubesasd\parent.cpp
 	"parent.h"
 
-1479973084 d:\sekolah\telkom\asd\tubes\tubesasd\parent.h
+1480395677 d:\sekolah\telkom\asd\tubes\tubesasd\parent.h
 	<iostream>
+	"child.h"
+
+1480428865 source:d:\tubesasd new\tubesasd\child.cpp
+	<iostream>
+	<string>
+	"child.h"
+
+1480425044 d:\tubesasd new\tubesasd\child.h
+	<iostream>
+
+1480428936 source:d:\tubesasd new\tubesasd\main.cpp
+	<iostream>
+	"parent.h"
+	"child.h"
+
+1480423712 d:\tubesasd new\tubesasd\parent.h
+	<iostream>
+	"child.h"
+
+1480429795 source:d:\tubesasd new\tubesasd\parent.cpp
+	"parent.h"
+
+1480496132 source:d:\sekolah\telkom\asd\tubes\29112016\tubesasd new\tubesasd new\tubesasd\child.cpp
+	<iostream>
+	<string>
+	"child.h"
+
+1480494610 d:\sekolah\telkom\asd\tubes\29112016\tubesasd new\tubesasd new\tubesasd\child.h
+	<iostream>
+
+1480510071 source:d:\sekolah\telkom\asd\tubes\29112016\tubesasd new\tubesasd new\tubesasd\main.cpp
+	<iostream>
+	"parent.h"
+	"child.h"
+
+1480423712 d:\sekolah\telkom\asd\tubes\29112016\tubesasd new\tubesasd new\tubesasd\parent.h
+	<iostream>
+	"child.h"
+
+1480493673 source:d:\sekolah\telkom\asd\tubes\29112016\tubesasd new\tubesasd new\tubesasd\parent.cpp
+	"parent.h"
+
+1480748284 source:c:\users\anto\saved games\downloads\29112016\29112016\tubesasd new\tubesasd new\tubesasd\child.cpp
+	<iostream>
+	<string>
+	"child.h"
+
+1480748284 c:\users\anto\saved games\downloads\29112016\29112016\tubesasd new\tubesasd new\tubesasd\child.h
+	<iostream>
+
+1480755855 source:c:\users\anto\saved games\downloads\29112016\29112016\tubesasd new\tubesasd new\tubesasd\main.cpp
+	<iostream>
+	"parent.h"
+	"child.h"
+
+1480755587 c:\users\anto\saved games\downloads\29112016\29112016\tubesasd new\tubesasd new\tubesasd\parent.h
+	<iostream>
+	"child.h"
+
+1480755864 source:c:\users\anto\saved games\downloads\29112016\29112016\tubesasd new\tubesasd new\tubesasd\parent.cpp
+	"parent.h"
+
+1480767299 source:e:\tubesasd\child.cpp
+	<iostream>
+	<string>
+	"child.h"
+
+1480767018 e:\tubesasd\child.h
+	<iostream>
+
+1480759255 source:e:\tubesasd\parent.cpp
+	"parent.h"
+
+1480761081 e:\tubesasd\parent.h
+	<iostream>
+	"child.h"
+
+1480767095 source:e:\tubesasd\main.cpp
+	<iostream>
+	"parent.h"
 	"child.h"
 

@@ -27,7 +27,7 @@ struct elmlist_p {
     address_p prev;
     infotype_p info;
     address_p next;
-    address_c child;
+    List_c child;
 };
 
 struct List_p {
@@ -40,10 +40,12 @@ struct List_p {
 void createList(List_p &L);
 void insertFirst(List_p &L, address_p P);
 void insertLast(List_p &L, address_p P);
-void insertAfter(address_p Prec, address_p P);
+void insertAfter(List_p &L, address_p P, address_p Prec);
 void deleteFirst(List_p &L, address_p &P);
 void deleteLast(List_p &L, address_p &P);
-void deleteAfter(address_p Prec, address_p &P);
+void deleteAfter(List_p &L, address_p &P, address_p Prec);
+void sortingparent(List_p &L);
+void insertAscending(List_p &L,address_p P);
 
 
 /** PERLU MODIFIKASI */
@@ -51,5 +53,6 @@ address_p alokasi(infotype_p x);
 void dealokasi(address_p &P);
 address_p findElm(List_p L, infotype_p x);
 void printInfo(List_p L);
-
+void printAll(List_p L);
+//void reporting(List_p L, infotype_p x);
 #endif // PARENT_H_INCLUDED

@@ -34,6 +34,7 @@
 		</Compiler>
 		<Unit filename="child.cpp" />
 		<Unit filename="child.h" />
+		<Unit filename="fungsimenu.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="parent.cpp" />
 		<Unit filename="parent.h" />
