@@ -178,7 +178,7 @@ address_c findElm_c(List_c L, infotype_c x) {
     /**
     * NIM: 1301154566
     * IS : List L mungkin kosong
-    * FS : mengembalikan elemen dengan info.ID = x.ID,
+    * FS : mengembalikan elemen dengan info.ID = x.ID
     */
     address_c P = first(L);
     while(P != NULL) {
@@ -190,23 +190,12 @@ address_c findElm_c(List_c L, infotype_c x) {
     return NULL;
 }
 
-//sorting_c
-/* if(nama > nama)*/
-
 void insertAscending_c(List_c &L,address_c C)
 {
     /**
     * NIM: 1301154566
     * IS : List L mungkin kosong
-    * FS : - jika List L masih kosong maka lakukan insert first
-    *      - Jika List L tidak kosang maka :
-    *           - Jika info yang ditunjuk oleh elemen Q lebih besar dari info yang ditunjuk oleh elemen C,
-                  maka lakukan insert first
-                - Jika info yang ditunjuk oleh elemen Q sama dengan info yang ditunjuk oleh elemen C,
-                  maka tidak dapat diinputkan
-                - Jika next elemen ditunjuk oleh elemen Q = NULL,
-                  maka lakukan insert last
-                //kondisi insert after
+    * FS : Inputan akan langsung terurut berdasarkan ID
     */
     if (first(L) == NULL)
     {
@@ -258,8 +247,8 @@ void insertAscending_c(List_c &L,address_c C)
 void sortingchild(List_c &L){
     /**
     * NIM: 1301154566
-    * IS :
-    * FS :
+    * IS : Terurut berdasarkan ID
+    * FS : Terurut berdasarkan Nama
     *
     */
     address_c P, Q, R, S;
@@ -285,7 +274,7 @@ void jumlahmenu(List_c L)
     /**
     * NIM: 1301154566
     * IS : List L mungkin kosong
-    * FS : elemen yang ditunjuk P menjadi elemen pertama pada List L
+    * FS : Menghitung jumlah menu yang ada disuatu restaurant
     */
     int tambah=0;
     address_c Q = first(L);
@@ -305,10 +294,11 @@ void RataHarga(List_c L)
     /**
     * NIM: 1301154552
     * IS : List L mungkin kosong
-    * FS : elemen yang ditunjuk P menjadi elemen pertama pada List L
+    * FS : Mencari rata-rata harga menu makanan disuatu restaurant
     */
-    float rata = 0;
-    int i = 0 , totalharga = 0;
+    double rata = 0;
+    int i = 0;
+    int totalharga = 0;
     address_c Q = first(L);
     if (Q != NULL){
         while(Q != NULL){
@@ -327,7 +317,7 @@ void MaxHarga(List_c L){
     /**
     * NIM: 1301154552
     * IS : List L mungkin kosong
-    * FS : elemen yang ditunjuk P menjadi elemen pertama pada List L
+    * FS : Mencari harga menu makanan terendah disuatu restaurant
     */
     address_c Q = first(L);
     int tmp = -1;
@@ -347,7 +337,7 @@ void MinHarga(List_c L){
     /**
     * NIM: 1301154566
     * IS : List L mungkin kosong
-    * FS : elemen yang ditunjuk P menjadi elemen pertama pada List L
+    * FS : Mencari harga menu makanan terendah disuatu restaurant
     */
     address_c Q = first(L);
     int tmp = 1000000;
@@ -358,7 +348,7 @@ void MinHarga(List_c L){
             }
             Q = next(Q);
         }
-        cout<<"Maksimum Harga Menu: "<<tmp<<endl;
+        cout<<"Minimum Harga Menu : "<<tmp<<endl;
     } else {
         cout<<"Menu Tidak Ada"<<endl;
     }

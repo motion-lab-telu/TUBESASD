@@ -355,11 +355,12 @@ int main()
         }
         case 'c' :
             {
-            cout<<"ID Restaurant     : ";
+            cout<<"ID Restaurant      : ";
             cin>>searchid.id;
             Search = findElm(Lp, searchid);
             if (Search != NULL){
                 Lc = child(Search);
+                cout<<"===Reporting Restaurant "<<searchid.id<<"==="<<endl;
                 jumlahmenu(Lc);
                 RataHarga(Lc);
                 MaxHarga(Lc);

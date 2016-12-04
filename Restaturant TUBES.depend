@@ -114,3 +114,23 @@
 	"parent.h"
 	"child.h"
 
+1480867307 source:e:\fix\main.cpp
+	<iostream>
+	"parent.h"
+	"child.h"
+
+1480868056 e:\fix\parent.h
+	<iostream>
+	"child.h"
+
+1480868056 e:\fix\child.h
+	<iostream>
+
+1480867307 source:e:\fix\parent.cpp
+	"parent.h"
+
+1480867637 source:e:\fix\child.cpp
+	<iostream>
+	<string>
+	"child.h"
+

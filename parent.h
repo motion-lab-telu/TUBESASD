@@ -18,7 +18,7 @@ struct restaurant{
     string alamat;
     string nope;
     string tglberdiri;
-    string kategoriR; //
+    string kategoriR; //Korean, Italian, etc
 };
 typedef restaurant infotype_p;
 typedef struct elmlist_p *address_p;
@@ -54,5 +54,4 @@ void dealokasi(address_p &P);
 address_p findElm(List_p L, infotype_p x);
 void printInfo(List_p L);
 void printAll(List_p L);
-//void reporting(List_p L, infotype_p x);
 #endif // PARENT_H_INCLUDED

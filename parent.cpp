@@ -224,15 +224,7 @@ void insertAscending(List_p &L,address_p P)
     /**
     * NIM: 1301154552
     * IS : List L mungkin kosong
-    * FS : - jika List L masih kosong maka lakukan insert first
-    *      - Jika List L tidak kosang maka :
-    *           - Jika info yang ditunjuk oleh elemen Q lebih besar dari info yang ditunjuk oleh elemen C,
-                  maka lakukan insert first
-                - Jika info yang ditunjuk oleh elemen Q sama dengan info yang ditunjuk oleh elemen C,
-                  maka tidak dapat diinputkan
-                - Jika next elemen ditunjuk oleh elemen Q = NULL,
-                  maka lakukan insert last
-                //kondisi insert after
+    * FS : Inputan akan langsung terurut berdasarkan ID
     */
     if (first(L) == NULL)
     {
